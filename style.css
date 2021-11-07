@@ -1,0 +1,117 @@
+
+body{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+}
+.comment{
+    margin: 50px auto 50px;
+}
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-input{
+    
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-bottom:1px solid #888; 
+    outline:none;
+}
+.cmt{
+    margin-top: 30px;
+}
+.comment-btn-wrap{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.submit-btn{
+    transition: 0.3s ease-in-out;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+.comment-list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    
+    background-image: url(https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    padding: 25px;
+    justify-content: center;
+}
+.comment-list::-webkit-scrollbar{
+    display: none;
+}
+.comment-item{
+    margin: 0 auto;
+    position: relative;
+    flex: 0 0 calc(33.33333% - 60px);
+    height: 150px;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    user-select: none;
+    margin-left: 15px;
+}
+
+.comment-icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #ccc;
+}
+
+.comment-icon.active{
+    opacity: 1;
+    transition: 0.2s;
+    animation: grow 0.2s ease-in-out;
+    color: red;
+}
+
+/* keyframes grow {
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 2;
+    }
+    100%{
+        scale: 1;
+    }
+} */
+.name,.title{
+    margin: 0;
+}
+.name{
+    font-family: cursive;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.comment-img{
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
